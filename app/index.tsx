@@ -1,13 +1,13 @@
 import { colors } from "@/constants/theme";
 import { useRouter } from "expo-router";
 import React, { useEffect } from "react";
-import { StyleSheet, View } from "react-native";
+import { Image, StyleSheet, View } from "react-native";
 
 const index = () => {
     const router = useRouter();
     useEffect(() => {
         setTimeout(() => {
-            router.replace("/welcome");
+            router.replace("../app/welcome");
         }, 2000);
     }, []);
     return (
@@ -15,7 +15,7 @@ const index = () => {
             <Image
                 style={styles.logo}
                 resizeMode="contain"
-                source={require("../assets/images/splash-icon.png")}
+                source={require("@/assets/images/splash-icon.png")}
             />
         </View>
     );
