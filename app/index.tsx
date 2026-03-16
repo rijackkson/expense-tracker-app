@@ -7,7 +7,7 @@ const index = () => {
     const router = useRouter();
     useEffect(() => {
         setTimeout(() => {
-            router.replace("../app/welcome");
+            router.replace("/(auth)/welcome");
         }, 2000);
     }, []);
     return (

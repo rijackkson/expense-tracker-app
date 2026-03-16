@@ -2,12 +2,12 @@ import { Timestamp } from "firebase/firestore";
 import { Icon } from "phosphor-react-native";
 import React, { ReactNode } from "react";
 import {
-    TextInput,
-    TextInputProps,
-    TextProps,
-    TextStyle,
-    TouchableOpacityProps,
-    ViewStyle
+  TextInput,
+  TextInputProps,
+  TextProps,
+  TextStyle,
+  TouchableOpacityProps,
+  ViewStyle
 } from "react-native";
 
 export type ScreenWrapperProps = {
@@ -17,7 +17,7 @@ export type ScreenWrapperProps = {
 export type ModalWrapperProps = {
   style?: ViewStyle;
   children: React.ReactNode;
-  bg?: string;
+  
 };
 export type accountOptionType = {
   title: string;
