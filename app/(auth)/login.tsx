@@ -83,7 +83,7 @@ const Login = () => {
                         Forgot Password?
                     </Typo>
 
-                    <Pressable style={{ backgroundColor: colors.primary, padding: 15, borderRadius: 10 }} onPress={handleSubmit}>
+                    <Pressable style={{ backgroundColor: colors.primary, padding: 15, borderRadius: 10  }} onPress={handleSubmit}>
                         <Typo fontWeight={"700"} color={colors.black} size={16}>
                             Login
                         </Typo>

@@ -1,13 +1,15 @@
-import { Stack } from 'expo-router'
-import React from 'react'
-import { StyleSheet } from 'react-native'
+import { AuthProvider } from '@/contexts/authContext';
+import { Stack } from 'expo-router';
 
-const _layout = () => {
+export default function RootLayout() {
   return (
-    <Stack screenOptions={{ headerShown: false }}></Stack>
-  )
+    // O AuthProvider deve envolver o Stack (que contém todas as telas)
+    <AuthProvider>
+      <Stack screenOptions={{ headerShown: false }}>
+        {/* Aqui ficam suas rotas como (auth), (main), etc */}
+        <Stack.Screen name="(auth)/login" />
+        <Stack.Screen name="(auth)/register" />
+      </Stack>
+    </AuthProvider>
+  );
 }
-
-export default _layout
-
-const styles = StyleSheet.create({})
